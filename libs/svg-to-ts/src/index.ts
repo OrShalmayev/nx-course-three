@@ -1,1 +1,1 @@
-export * from './lib/svg-to-ts';
+export * from './lib';

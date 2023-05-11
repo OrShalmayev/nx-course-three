@@ -8,7 +8,7 @@ defineCustomElements()
   standalone: true,
   imports: [RouterModule, UiPlatformAngularModule],
   selector: 'nx-course-three-root',
-  template: `<my-component></my-component>`,
+  template: `<spot-icon #spotIcon iconName="chevron-down" [iconName]="spotIcon"></spot-icon>`,
   styles: [],
 })
 export class AppComponent {

@@ -1,5 +1,9 @@
 {
   "name": "@nx-course-three/svg-to-ts",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "scripts": {
+    "transform-icons": "npm run svg-normalize && svg-to-ts-files",
+    "svg-normalize": "node config/svg-normalize.js"
+  }
 }
