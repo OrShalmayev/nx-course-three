@@ -1,0 +1,67 @@
+{
+  "name": "ui-platform",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui-platform/src",
+  "projectType": "library",
+  "generators": {
+    "@nxext/stencil:component": {
+      "style": "scss"
+    }
+  },
+  "tags": [],
+  "targets": {
+    "test": {
+      "executor": "@nxext/stencil:test",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "libs/ui-platform/tsconfig.lib.json",
+        "configPath": "libs/ui-platform/stencil.config.ts",
+        "outputPath": "dist/libs/ui-platform"
+      }
+    },
+    "build": {
+      "executor": "@nxext/stencil:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "libs/ui-platform/tsconfig.lib.json",
+        "configPath": "libs/ui-platform/stencil.config.ts",
+        "outputPath": "dist/libs/ui-platform"
+      },
+      "configurations": {
+        "production": {
+          "dev": false,
+          "prod": true
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nxext/stencil:serve",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "libs/ui-platform/tsconfig.lib.json",
+        "configPath": "libs/ui-platform/stencil.config.ts",
+        "outputPath": "dist/libs/ui-platform"
+      }
+    },
+    "e2e": {
+      "executor": "@nxext/stencil:e2e",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "libs/ui-platform/tsconfig.lib.json",
+        "configPath": "libs/ui-platform/stencil.config.ts",
+        "outputPath": "dist/libs/ui-platform"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": "libs/ui-platform/**/*.{ts,tsx}"
+      }
+    }
+  }
+}

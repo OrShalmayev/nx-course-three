@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-course-three/ui-platform": ["dist/libs/ui-platform"],
+      "@nx-course-three/ui-platform-angular": [
+        "libs/ui-platform-angular/src/index.ts"
+      ],
+      "@nx-course-three/ui-platform/*": [
+        "dist/libs/ui-platform/dist/components/*"
+      ],
+      "@nx-course-three/ui-platform/loader": ["dist/libs/ui-platform/loader"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
