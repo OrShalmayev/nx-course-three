@@ -3,11 +3,11 @@ import {allIcons, SpotIcons, SpotIconsName} from "@nx-course-three/svg-to-ts";
 
 
 @Component({
-  tag: 'spot-icon',
+  tag: 'shalma-icon',
   styleUrl: 'shalma-icon.scss',
   scoped: true
 })
-export class SpotIcon {
+export class ShalmaIcon {
   spotIconsName: typeof SpotIconsName = SpotIconsName;
   allIcons: SpotIcons[] = allIcons
 

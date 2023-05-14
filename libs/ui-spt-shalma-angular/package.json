@@ -1,5 +1,5 @@
 {
-  "name": "@shalma-spt-webcomponents",
+  "name": "shalma-spt-webcomponents",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^15.1.0",
