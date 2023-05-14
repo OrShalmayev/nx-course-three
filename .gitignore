@@ -40,3 +40,4 @@ Thumbs.db
 
 .angular
 libs/ui-platform-angular/**/generated
+libs/ui-spt-shalma-angular/**/generated
