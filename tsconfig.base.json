@@ -31,7 +31,6 @@
       "@nx-course-three/ui-spt-shalma/loader": [
         "dist/libs/ui-spt-shalma/loader"
       ],
-      "@shalma-spt-webcomponents": ["libs/ui-spt-shalma-angular/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
