@@ -1,11 +1,10 @@
-import {Component, h, Prop} from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 import {allIcons, SpotIcons, SpotIconsName} from "@nx-course-three/svg-to-ts";
-
 
 @Component({
   tag: 'shalma-icon',
   styleUrl: 'shalma-icon.scss',
-  scoped: true
+  shadow: true,
 })
 export class ShalmaIcon {
   spotIconsName: typeof SpotIconsName = SpotIconsName;

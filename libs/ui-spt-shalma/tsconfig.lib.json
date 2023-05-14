@@ -7,5 +7,5 @@
     "types": ["node"]
   },
   "exclude": ["**/*.spec.ts", "**/*.spec.tsx"],
-  "include": ["../svg-to-ts/**/*.ts","**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
+  "include": ["../svg-to-ts/src/**/*.ts","**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
 }
