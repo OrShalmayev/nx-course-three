@@ -8,12 +8,13 @@ import {allIcons, SpotIcons, SpotIconsName} from "@nx-course-three/svg-to-ts";
   scoped: true
 })
 export class SpotIcon {
-  static spotIconsName: typeof SpotIconsName = SpotIconsName;
-  static allIcons: SpotIcons[] = allIcons
+  spotIconsName: typeof SpotIconsName = SpotIconsName;
+  allIcons: SpotIcons[] = allIcons
 
-  @Prop() iconName: string;
+  @Prop() iconName!: string;
 
   private getIcon(): string {
+    //TODO handle when icon name is not defined
     return allIcons.find(icon => icon.name === this.iconName).data;
   }
 

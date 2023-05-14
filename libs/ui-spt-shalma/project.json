@@ -1,0 +1,67 @@
+{
+  "name": "ui-spt-shalma",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ui-spt-shalma/src",
+  "projectType": "library",
+  "generators": {
+    "@nxext/stencil:component": {
+      "style": "scss"
+    }
+  },
+  "tags": [],
+  "targets": {
+    "test": {
+      "executor": "@nxext/stencil:test",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "libs/ui-spt-shalma/tsconfig.lib.json",
+        "configPath": "libs/ui-spt-shalma/stencil.config.ts",
+        "outputPath": "dist/libs/ui-spt-shalma"
+      }
+    },
+    "build": {
+      "executor": "@nxext/stencil:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "libs/ui-spt-shalma/tsconfig.lib.json",
+        "configPath": "libs/ui-spt-shalma/stencil.config.ts",
+        "outputPath": "dist/libs/ui-spt-shalma"
+      },
+      "configurations": {
+        "production": {
+          "dev": false,
+          "prod": true
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nxext/stencil:serve",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "libs/ui-spt-shalma/tsconfig.lib.json",
+        "configPath": "libs/ui-spt-shalma/stencil.config.ts",
+        "outputPath": "dist/libs/ui-spt-shalma"
+      }
+    },
+    "e2e": {
+      "executor": "@nxext/stencil:e2e",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "projectType": "library",
+        "tsConfig": "libs/ui-spt-shalma/tsconfig.lib.json",
+        "configPath": "libs/ui-spt-shalma/stencil.config.ts",
+        "outputPath": "dist/libs/ui-spt-shalma"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": "libs/ui-spt-shalma/**/*.{ts,tsx}"
+      }
+    }
+  }
+}

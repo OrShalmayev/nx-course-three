@@ -23,7 +23,14 @@
       "@nx-course-three/ui-platform/*": [
         "dist/libs/ui-platform/dist/components/*"
       ],
-      "@nx-course-three/ui-platform/loader": ["dist/libs/ui-platform/loader"]
+      "@nx-course-three/ui-platform/loader": ["dist/libs/ui-platform/loader"],
+      "@nx-course-three/ui-spt-shalma": ["dist/libs/ui-spt-shalma"],
+      "@nx-course-three/ui-spt-shalma/*": [
+        "dist/libs/ui-spt-shalma/dist/components/*"
+      ],
+      "@nx-course-three/ui-spt-shalma/loader": [
+        "dist/libs/ui-spt-shalma/loader"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

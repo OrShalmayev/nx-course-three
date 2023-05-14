@@ -7,9 +7,6 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface SpotIcon {
-        /**
-          * The first name
-         */
         "iconName": string;
     }
 }
@@ -26,10 +23,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface SpotIcon {
-        /**
-          * The first name
-         */
-        "iconName"?: string;
+        "iconName": string;
     }
     interface IntrinsicElements {
         "spot-icon": SpotIcon;

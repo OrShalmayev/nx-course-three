@@ -2,17 +2,11 @@ import { Config } from '@stencil/core';
 
 import { sass } from '@stencil/sass';
 
-const angularValueAccessorBindings: ValueAccessorConfig[] = [];
-
-import {
-  angularOutputTarget,
-  ValueAccessorConfig,
-} from '@stencil/angular-output-target';
-
 export const config: Config = {
-  namespace: 'ui-platform',
+  namespace: 'ui-spt-shalma',
   taskQueue: 'async',
   sourceMap: true,
+
   extras: {
     experimentalImportInjection: true,
   },
@@ -41,14 +35,5 @@ export const config: Config = {
       autoDefineCustomElements: true,
       includeGlobalScripts: false,
     },
-
-    angularOutputTarget({
-      componentCorePackage: '@nx-course-three/ui-platform',
-      directivesProxyFile:
-        '../../../libs/ui-platform-angular/src/generated/directives/proxies.ts',
-      directivesArrayFile:
-        '../../../libs/ui-platform-angular/src/generated/directives/index.ts',
-      valueAccessorConfigs: angularValueAccessorBindings,
-    }),
   ],
 };

@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property   | Attribute   | Description    | Type     | Default     |
-| ---------- | ----------- | -------------- | -------- | ----------- |
-| `iconName` | `icon-name` | The first name | `string` | `undefined` |
+| Property                | Attribute   | Description | Type     | Default     |
+| ----------------------- | ----------- | ----------- | -------- | ----------- |
+| `iconName` _(required)_ | `icon-name` |             | `string` | `undefined` |
 
 
 ----------------------------------------------
