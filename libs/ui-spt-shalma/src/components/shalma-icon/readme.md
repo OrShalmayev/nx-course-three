@@ -1,4 +1,4 @@
-# spot-icon
+# shalma-icon
 
 
 

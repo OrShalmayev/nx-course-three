@@ -6,34 +6,34 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface SpotIcon {
+    interface ShalmaIcon {
         "iconName": string;
     }
 }
 declare global {
-    interface HTMLSpotIconElement extends Components.SpotIcon, HTMLStencilElement {
+    interface HTMLShalmaIconElement extends Components.ShalmaIcon, HTMLStencilElement {
     }
-    var HTMLSpotIconElement: {
-        prototype: HTMLSpotIconElement;
-        new (): HTMLSpotIconElement;
+    var HTMLShalmaIconElement: {
+        prototype: HTMLShalmaIconElement;
+        new (): HTMLShalmaIconElement;
     };
     interface HTMLElementTagNameMap {
-        "spot-icon": HTMLSpotIconElement;
+        "shalma-icon": HTMLShalmaIconElement;
     }
 }
 declare namespace LocalJSX {
-    interface SpotIcon {
+    interface ShalmaIcon {
         "iconName": string;
     }
     interface IntrinsicElements {
-        "spot-icon": SpotIcon;
+        "shalma-icon": ShalmaIcon;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "spot-icon": LocalJSX.SpotIcon & JSXBase.HTMLAttributes<HTMLSpotIconElement>;
+            "shalma-icon": LocalJSX.ShalmaIcon & JSXBase.HTMLAttributes<HTMLShalmaIconElement>;
         }
     }
 }
