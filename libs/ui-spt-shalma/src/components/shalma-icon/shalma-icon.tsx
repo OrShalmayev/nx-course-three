@@ -4,7 +4,7 @@ import {allIcons, SpotIcons, SpotIconsName} from "@nx-course-three/svg-to-ts";
 
 @Component({
   tag: 'spot-icon',
-  styleUrl: 'spot-icon.scss',
+  styleUrl: 'shalma-icon.scss',
   scoped: true
 })
 export class SpotIcon {
